@@ -1,0 +1,28 @@
+﻿{
+	"FileVersion": 3,
+	"Version": 1,
+	"VersionName": "1.0",
+	"FriendlyName": "GameFeatureTemplateExtension",
+	"Description": "A plug-and-play Editor plugin to register project-relative Game Feature templates, fixing path resolution issues without engine modifications.",
+	"Category": "Gameplay",
+	"CreatedBy": "SparkleBoom",
+	"CreatedByURL": "https://github.com/SparkleBoom-Tutorials",
+	"DocsURL": "https://github.com/SparkleBoom-Tutorials/GameFeatureTemplateExtension",
+	"CanContainContent": false,
+	"IsBetaVersion": false,
+	"IsExperimentalVersion": false,
+	"Installed": false,
+	"Modules": [
+		{
+			"Name": "GameFeatureTemplateExtension",
+			"Type": "Editor",
+			"LoadingPhase": "Default"
+		}
+	],
+	"Plugins": [
+		{
+			"Name": "GameFeatures",
+			"Enabled": true
+		}
+	]
+}
