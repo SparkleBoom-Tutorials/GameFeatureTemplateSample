@@ -46,7 +46,8 @@ struct FGameFeatureTemplateExtensionData
 	UPROPERTY(Config, EditAnywhere, Category = Plugins)
 	bool bIsEnabledByDefault = false;
 
-#if UE_VERSION_NEWER_THAN_OR_EQUAL(5, 8, 0)
+	// Those options below works only from Unreal version 5.8
+	
 	/** Optional path to a post create python script that will run when new plugins are created from this template. */
 	UPROPERTY(Config, EditAnywhere, Category = Plugins, meta = (RelativePath))
 	FFilePath PostCreatePythonScriptPath;
@@ -54,7 +55,7 @@ struct FGameFeatureTemplateExtensionData
 	/** Optional post create python script arguments. */
 	UPROPERTY(Config, EditAnywhere, Category = Plugins)
 	FString PostCreatePythonScriptArguments;
-#endif
+
 };
 
 /**
